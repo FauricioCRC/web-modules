@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/scripts.js" defer></script>
+    <title>Modules</title>
+</head>
+
+<body class="body">
+    <div id="state-menu" class="state-menu" title="Menu">
+        <img loading="lazy" class="state-menu__icon" src="assets/icons/hamburger-menu.svg" alt="menu" />
+    </div>
+    <main class="main-main">
+        <aside id="menu" class="main-aside">
+            <ul class="list">
+                <li class="list__item active">Acordeón</li>
+                <li class="list__item">Carrusel</li>
+                <li class="list__item">Lightbox</li>
+            </ul>
+        </aside>
+        <section class="section section--acordeon active">
+            <div id="acordeon" class="acordeon">
+                <div class="acordeon__bloque">
+                    <h2 class="acordeon__title">
+                        <img loading="lazy" class="acordeon__icon-state" src="assets/icons/triangle-bottom-arrow.svg"
+                            alt="Estado del acordeón" />Abrir parrafo 1
+                    </h2>
+                    <p class="acordeon__contenido">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore praesentium nemo fugit minus
+                        laudantium quasi suscipit voluptatum cum reprehenderit. Delectus dolores odit, alias neque
+                        beatae voluptate ex. Perferendis nisi rerum doloribus quibusdam hic?
+                        Ea dolores id voluptatum ab debitis vero similique aliquid, deserunt, numquam, soluta accusamus
+                        alias ullam quisquam consectetur!
+                    </p>
+                </div>
+                <div class="acordeon__bloque">
+                    <h2 class="acordeon__title">
+                        <img loading="lazy" class="acordeon__icon-state" src="assets/icons/triangle-bottom-arrow.svg"
+                            alt="Estado del acordeón" />Abrir parrafo 2
+                    </h2>
+                    <p class="acordeon__contenido">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab aperiam culpa sequi animi modi ad
+                        quis cupiditate natus, error tempore maxime minus laboriosam, maiores cumque dignissimos, omnis
+                        voluptatum qui labore commodi in harum! Explicabo inventore
+                        dolorem mollitia iusto quas eum velit quasi iste, quos asperiores magni dolore repudiandae
+                        quisquam consequuntur.
+                    </p>
+                </div>
+                <div class="acordeon__bloque">
+                    <h2 class="acordeon__title">
+                        <img loading="lazy" class="acordeon__icon-state" src="assets/icons/triangle-bottom-arrow.svg"
+                            alt="Estado del acordeón" />Abrir parrafo 3
+                    </h2>
+                    <p class="acordeon__contenido">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab aperiam culpa sequi animi modi ad
+                        quis cupiditate natus, error tempore maxime minus laboriosam, maiores cumque dignissimos, omnis
+                        voluptatum qui labore commodi in harum! Explicabo inventore
+                        dolorem mollitia iusto quas eum velit quasi iste, quos asperiores magni dolore repudiandae
+                        quisquam consequuntur.
+                    </p>
+                </div>
+                <div class="acordeon__bloque">
+                    <h2 class="acordeon__title">
+                        <img loading="lazy" class="acordeon__icon-state" src="assets/icons/triangle-bottom-arrow.svg"
+                            alt="Estado del acordeón" />Abrir parrafo 4
+                    </h2>
+                    <p class="acordeon__contenido">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab aperiam culpa sequi animi modi ad
+                        quis cupiditate natus, error tempore maxime minus laboriosam, maiores cumque dignissimos, omnis
+                        voluptatum qui labore commodi in harum! Explicabo inventore
+                        dolorem mollitia iusto quas eum velit quasi iste, quos asperiores magni dolore repudiandae
+                        quisquam consequuntur.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section section--carrusel">
+            <div class="carrousel">
+                <div id="carrousel-imgs" class="carrousel__imgs">
+                    <img loading="lazy" src="assets/images/animal.jpg" alt="Imagen 1" class="carrousel__img" />
+                    <img loading="lazy" src="assets/images/bird.jpg" alt="Imagen 2" class="carrousel__img" />
+                    <img loading="lazy" src="assets/images/flower.jpg" alt="Imagen 3" class="carrousel__img" />
+                </div>
+                <ul id="list-points" class="list-points">
+                    <li class="list-points__item active"></li>
+                    <li class="list-points__item"></li>
+                    <li class="list-points__item"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section section--lightbox">
+            <ul id="lightbox-list" class="lightbox-list">
+                <li class="lightbox-list__item">
+                    <a href="#" class="lightbox-list__link"><img src="assets/images/animal.jpg" alt="Imagen 1"
+                            class="lightbox-list__image" /></a>
+                </li>
+                <li class="lightbox-list__item">
+                    <a href="#" class="lightbox-list__link"><img src="assets/images/bird.jpg" alt="Imagen 2"
+                            class="lightbox-list__image" /></a>
+                </li>
+                <li class="lightbox-list__item">
+                    <a href="#" class="lightbox-list__link"><img src="assets/images/seagull.jpg" alt="Imagen 3"
+                            class="lightbox-list__image" /></a>
+                </li>
+            </ul>
+            <div id="lightbox" class="lightbox">
+                <button id="lightbox-close-button" class="lightbox__button" type="button">cerrar</button>
+                <img src="assets/images/animal.jpg" alt="Lightbox Image" class="lightbox__image" />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, obcaecati.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

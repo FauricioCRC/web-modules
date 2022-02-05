@@ -1,0 +1,5 @@
+import "./modules/menu.js"
+import "./modules/tabs.js"
+import "./modules/accordion.js"
+import "./modules/carrousel.js"
+import "./modules/lightbox.js"
